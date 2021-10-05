@@ -1,6 +1,6 @@
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
+    url('../img/accessibility-hero-banner.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -84,14 +84,13 @@
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
 
-
 .has-same-height .card {
   height: 350px;
   overflow: hidden;
 }
 
 .skills-content .media + .media {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .skills-content .progress {
@@ -103,12 +102,11 @@
 }
 
 .info-tiles {
-  margin: .75rem auto;
-  padding: 0 .75rem;
+  margin: 0.75rem auto;
+  padding: 0 0.75rem;
 }
 
 .button.is-primary.is-alt {
-  background: linear-gradient(to bottom, #0072ff, #00c6ff);
   font-weight: 700;
   font-size: 14px;
   height: 3rem;
@@ -118,7 +116,7 @@
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #E6EAEE;
+  border-bottom: 1px solid #e6eaee;
 }
 .post:last-child {
   padding-bottom: 0;
@@ -126,9 +124,8 @@
 }
 
 .forum-list li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
@@ -166,7 +163,7 @@ li {
 }
 
 .ol-list li::before {
-  content: "";
+  content: '';
   background: url(../img/arrow_sans_right-512.png) no-repeat;
   display: inline-block;
   text-align: center;
@@ -175,4 +172,93 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+form *:focus,
+a:focus {
+  border: 2px solid;
+}
+
+.button.is-info {
+  background-color: #1f6ea3;
+}
+
+.subtitle {
+  color: #2c2c2c;
+}
+
+.hero.is-info {
+  background-color: #06629f;
+}
+
+.hero.is-info .subtitle {
+  color: #ffffff;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active a {
+  color: #0865a2;
+}
+
+.tag:not(body).is-danger {
+  background-color: #d3052e;
+}
+
+.tag:not(body).is-primary {
+  background-color: #008570;
+}
+
+.tag:not(body).is-success {
+  background-color: #088534;
+}
+
+a {
+  color: #1b56b5;
+}
+
+.help.is-danger {
+  color: #d3153b;
+}
+
+.help.is-success {
+  color: #107032;
+}
+
+.has-text-grey-light {
+  color: #6e6d6d !important;
+}
+
+.button.is-primary {
+  background-color: #01816d;
+}
+
+.navbar-burger {
+  color: #ffffff;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.skipNav {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+
+.skipNav:focus {
+  color: #000000;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
 }
