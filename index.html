@@ -324,6 +324,7 @@
           <ul>
             <li
               role="tab"
+              tabindex="0"
               aria-selected="true"
               aria-controls="panel-1"
               data-target="panel-1"
@@ -335,13 +336,13 @@
                 <span>Pictures</span>
               </a>
             </li>
-            <li role="tab" aria-selected="false" aria-controls="panel-2" data-target="panel-2" id="tab-2">
+            <li role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-2" data-target="panel-2" id="tab-2">
               <a href="#" onclick="return false;">
                 <span aria-hidden="true" class="icon is-small"><i class="fab fa-superpowers"></i></span>
                 <span>Team</span>
               </a>
             </li>
-            <li role="tab" aria-selected="false" aria-controls="panel-3" data-target="panel-3" id="tab-3">
+            <li role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-3" data-target="panel-3" id="tab-3">
               <a href="#" onclick="return false;">
                 <span aria-hidden="true" class="icon is-small"><i class="fa fa-film"></i></span>
                 <span>Video</span>
@@ -352,7 +353,7 @@
       </section>
 
       <div class="tab-content container">
-        <div role="tabpanel" aria-labelledby="tab-1" class="tab-pane is-active level" id="panel-1">
+        <div role="tabpanel" tabindex="0" aria-labelledby="tab-1" class="tab-pane is-active level" id="panel-1">
           <div class="container">
             <div class="columns features">
               <div class="column is-4">
@@ -452,7 +453,7 @@
           </div>
         </div>
 
-        <div role="tabpanel" aria-labelledby="tab-2" class="tab-pane" id="panel-2">
+        <div role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="tab-pane" id="panel-2">
           <div class="columns medias">
             <div class="column">
               <div class="media">
@@ -521,7 +522,7 @@
           </div>
         </div>
 
-        <div role="tabpanel" aria-labelledby="tab-3" class="tab-pane" id="panel-3">
+        <div role="tabpanel" tabindex="0" aria-labelledby="tab-3" class="tab-pane" id="panel-3">
           <div class="columns is-centered">
             <div class="column is-three-quarters">
               <div class="title has-text-centered">Inspired video</div>
